@@ -33,7 +33,7 @@ def load_documents(pdf_path='Datasets/Financial Reports', txt_path='Datasets/Fin
     return pdf_docs, text_docs
 
 if __name__ == "__main__":
-    pdf_docs, txt_docs = load_documents()
+    pdf_docs, text_docs = load_documents()
     
     # Check first PDF
     print("First PDF document")
@@ -42,5 +42,5 @@ if __name__ == "__main__":
     
     # Check first txt
     print("\nFirst text file")
-    print(txt_docs[0].page_content[:300])
-    print(txt_docs[0].metadata)
+    print(text_docs[0].page_content[:300])
+    print(text_docs[0].metadata)
